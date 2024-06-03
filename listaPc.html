@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Pc</title>
+  
+</head>
+<body>
+    <div class="container">
+        <h1>Lista Pc</h1>
+        <div th:each="computer : ${lista}" class="ocomputer">
+            <h3>Marca: <span th:text="${computer.marca}"></span></h3>
+            <h3>Tipologia: <span th:text="${computer.tipologia}"></span></h3>
+            <h3>Modello: <span th:text="${computer.modello}"></span></h3>
+            <h3>Descrizione: <span th:text="${computer.descrizione}"></span></h3>
+            <h3>Quantità: <span th:text="${computer.qnt}"></span></h3>
+            <img th:src="${computer.url}" alt="Immagine computer">
+            <h3>Prezzo: <span th:text="${computer.prezzo}"></span></h3>
+           
+        </div>
+        <div class="text-center">
+            <button class="btn" onclick="location.href='/'">Torna alla home</button>
+            
+        </div>
+    </div>
+</body>
+</html>

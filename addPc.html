@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  
+    <title>Oggetto aggiunto</title>
+</head>
+<body>
+    
+    
+    
+    <h1>Oggetto aggiunto con successo</h1>
+    
+    
+  	<h3>Marca: <span th:text = "${computer.marca}"></span></h3>
+   	<h3>Tipologia: <span th:text = "${computer.tipologia}"></span></h3>
+   	<h3>Modello: <span th:text = "${computer.modello}"></span></h3>
+    <h3>Descrizione: <span th:text = "${computer.descrizione}"></span></h3>
+    <h3>Quantità: <span th:text = "${computer.qnt}"></span></h3>
+    <h3>Prezzo: <span th:text = "${computer.prezzo}"></span></h3>
+    <img th:src="${computer.url}" alt="simpson" border="0">
+   
+    
+    <button onclick = "location.href='/'"> Torna alla home</button>
+    
+    
+   
+   
+</body>
+</html>
